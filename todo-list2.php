@@ -1,11 +1,11 @@
 <?php 
 
 $localhost = 'localhost'; 
-$usario = 'root';
+$usuario = 'root';
 $senha = '';
-$database = 'todo_list'; 
+$database = 'to_dolist'; 
 
-$conn = mysqli_connect($localhost,$usario,$senha, $database);
+$conn = mysqli_connect($localhost,$usuario,$senha, $database);
 
 if($conn->connect_error){
     die('Deu erro na conexão'. $conn->connect_error);
