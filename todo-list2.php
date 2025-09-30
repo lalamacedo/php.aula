@@ -5,7 +5,7 @@ $usuario = 'root';
 $senha = '';
 $database = 'to_dolist'; 
 
-$conn = mysqli_connect($localhost,$usuario,$senha, $database);
+$conn = new mysqli($localhost,$usuario,$senha, $database);
 
 if($conn->connect_error){
     die('Deu erro na conexão'. $conn->connect_error);
